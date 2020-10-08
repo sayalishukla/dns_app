@@ -35,7 +35,7 @@ def fibonacci():
     clientSock.sendto(MESSAGE, (UDP_IP, UDP_PORT))
     modifiedMessage, serverAddress = clientSock.recvfrom(2048)
     dec_msg = modifiedMessage.decode()
-
+    print(dec_msg)
     fs_server = None
     for l in dec_msg.split():
         if "VALUE" in l:

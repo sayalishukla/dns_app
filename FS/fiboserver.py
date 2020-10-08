@@ -13,14 +13,11 @@ def hello_world():
 '''
 # HTTP PUT request at path “/register”
 fibo_data ={
-        "hostname":"fibonacci.com",
-        "ip": "0.0.0.0",
-        "as_ip": "0.0.0.0",
-        "as_port": "53533"
+        "hostname":"fibonacci.com","ip": "172.18.0.3","as_ip": "172.18.0.2","as_port": "53533"
     }
     resp1 = requests.put(f"http://0.0.0.0:9090/register", data=fibo_data)
     print(resp1)
-    
+    curl -X PUT -d 'hostname=fibonacci.com&ip=172.18.0.3&as_ip=172.18.0.2&as_port=53533' http://0.0.0.0:9090/register 
 '''
 
 # Registration to Authoritative Server
