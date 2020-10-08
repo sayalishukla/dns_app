@@ -53,15 +53,3 @@ app.run(host='0.0.0.0',
         debug=True)
 
 # http://0.0.0.0:8080/fibonacci?hostname=fibonacci.com&fs_port=9090&number=3&as_ip=0.0.0.0&as_port=53533
-
-'''
-    fibo_data = {
-        "hostname": "fibonacci.com",
-        "ip": "0.0.0.0",
-        "as_ip": "0.0.0.0",
-        "as_port": "53533"
-    }
-    resp1 = requests.put(f"http://0.0.0.0:9090/register", data=fibo_data)
-
-
-'''
